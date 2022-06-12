@@ -55,6 +55,7 @@ public class TemplateMethodController {
     @GetMapping("right")
     public Cart right(@RequestParam("userId") int userId) {
         String userCategory = Db.getUserCategory(userId);
+        // 通过bean的名字，动态获取bean
         AbstractCart cart = (AbstractCart) applicationContext.getBean(userCategory + "UserCart");
         return cart.process(userId, items);
     }

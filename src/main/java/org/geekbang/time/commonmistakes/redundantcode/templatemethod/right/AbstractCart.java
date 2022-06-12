@@ -9,6 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * AbstractCart抽象类
+ * 这个模式就是模板方法模式。
+ * 我们在父类中实现了购物车处理的流程模板，
+ * 然后把需要特殊处理的地方留空白也就是留抽象方法定义，processCouponPrice & processDeliveryPrice
+ * 让子类去实现其中的逻辑。
+ * 由于父类的逻辑不完整无法单独工作，因此需要定义为抽象类
+ */
 public abstract class AbstractCart {
 
     public Cart process(long userId, Map<Long, Integer> items) {

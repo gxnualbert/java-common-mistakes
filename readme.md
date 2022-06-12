@@ -21,6 +21,7 @@
 - 源码根目录下有一个readme.md的Markdown文件，这里有一个目录列了每一篇文章对应的源码位置，同时来到每一个源码包中下面还有一个readme.md文件，里面列了每一篇文章中每一个小节的源码包名。
 - 大多数源码中的案例都会使用wrong和right这样方法命名来代表错误实现和正确实现，你可以结合文章对比实现来理解。
 - 有一些案例（比如SQL索引一文）会基于当前时间生成测试数据，所以不确保文中的测试结果本地可以重现，需要自己调整测试用例。
+- docker-compose windows安装连接：https://docs.docker.com/compose/install/compose-plugin/#install-compose-on-windows-server
 
 ### 代码篇
 
